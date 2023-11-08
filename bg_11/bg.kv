@@ -1,0 +1,22 @@
+<MyLayout>
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		spacing: 20
+		padding: 20
+		
+		canvas.before:
+			Color:
+				rgba:(1,1,1,1)
+				
+			Rectangle:
+				pos: self.pos
+				size: self.size
+		Label:
+			text: "name"
+			
+		TextInput:
+			multiline: False
+			
+		Button:
+			text: "Submit"

@@ -1,0 +1,37 @@
+<Button>
+	font_size: 45
+	background_normal:""
+	background_color:  (0,0,1,1)
+	
+<TextInput>
+	font_size: 45
+	background_color:(150/255, 150/255,150/255,1)
+	
+<Label>
+	font_size: 45
+	
+<MainLayout>
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		spacing: 20
+		padding: 20
+		
+		Label:
+			text: "name"
+			
+		TextInput:
+			multiline: False
+			
+		Label:
+			text: "favorite pizza"
+			
+		TextInput:
+			multiline: False
+			
+		Button:
+			text: "Submit"
+			
+		Button:
+			text: "Clear"
+			background_color: (1,0,0,1)
