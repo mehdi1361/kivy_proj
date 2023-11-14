@@ -1,0 +1,19 @@
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            id: text_output
+            text: "test"
+
+        TextInput:
+            id: text_input
+            multliline: False
+            size_hint: (1, .5)
+
+        Button:
+            id: click
+            text: "Submit"
+            size_hint: (1, .5)
+            on_press: root.press()

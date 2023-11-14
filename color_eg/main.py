@@ -19,5 +19,4 @@ class MyGridLayout(Widget):
 class MainApp(App):
 	def build(self):
 		return MyGridLayout()
-		
 MainApp().run()
