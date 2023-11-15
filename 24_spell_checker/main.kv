@@ -6,14 +6,17 @@
         Label:
             id: text_output
             text: "test"
+            font_size: 32
 
         TextInput:
             id: text_input
             multliline: False
             size_hint: (1, .5)
+            font_size: 32
 
         Button:
-            id: click
+            id: button_submit
             text: "Submit"
             size_hint: (1, .5)
+            font_size: 32
             on_press: root.press()
