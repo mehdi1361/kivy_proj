@@ -5,9 +5,16 @@ from kivy.uix.widget import Widget
 
 Builder.load_file("checkbox.kv")
 
-
 class MyLayout(Widget):
-    pass
+    tops = []
+    def checkbox_click(self, instance, active, topping):
+        if active == True:
+            MyLayout.tops.append(topping)
+            self.ids.output_text.text = f"you select {','.join(MyLayout.tops)}"
+        else:
+            MyLayout.tops.remove(topping)
+            self.ids.output_text.text = f"you select {','.join(MyLayout.tops)}"
+
 
 
 class MainApp(App):
